@@ -590,11 +590,11 @@ F 3 "~" H 2300 2750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2150 2450 2500 2450
-Text GLabel 2500 2450 2    50   Input ~ 0
+Text GLabel 2500 2550 2    50   Input ~ 0
 SCL
 Wire Wire Line
 	2150 2550 2500 2550
-Text GLabel 2500 2550 2    50   Input ~ 0
+Text GLabel 2500 2650 2    50   Input ~ 0
 SDA
 Wire Wire Line
 	2150 2650 2500 2650
@@ -627,12 +627,12 @@ Connection ~ 2500 3050
 $Comp
 L power:+3.3V #PWR0102
 U 1 1 60E1E6CB
-P 2500 2650
-F 0 "#PWR0102" H 2500 2500 50  0001 C CNN
-F 1 "+3.3V" H 2515 2823 50  0000 C CNN
-F 2 "" H 2500 2650 50  0001 C CNN
-F 3 "" H 2500 2650 50  0001 C CNN
-	1    2500 2650
+P 2500 2450
+F 0 "#PWR0102" H 2500 2300 50  0001 C CNN
+F 1 "+3.3V" H 2515 2623 50  0000 C CNN
+F 2 "" H 2500 2450 50  0001 C CNN
+F 3 "" H 2500 2450 50  0001 C CNN
+	1    2500 2450
 	0    1    1    0   
 $EndComp
 Text GLabel 9000 4100 0    50   Input ~ 0
@@ -652,5 +652,4 @@ IN0B
 Text GLabel 9000 4800 0    50   Input ~ 0
 IN0A
 Connection ~ 2500 2450
-Connection ~ 2500 2650
 $EndSCHEMATC

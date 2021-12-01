@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name FDC2214-rescue)(type Legacy)(uri ${KIPRJMOD}/FDC2214-rescue.lib)(options "")(descr ""))
+)
