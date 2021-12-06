@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>MoTraCapaci Dashboard</title>
+  <script src="plotly-latest.min.js"></script>
+  <script src="kit_data.js"></script>
+  <script src="kit_vis.js"></script>
+  <script src="kit_ble.js"></script>
+
+  <link rel="stylesheet" href="mystyle.css">
+
+</head>
+
+<body>
+  <h1>MoTraCapaci</h1>
+  <p> a Dashboard by <a href="https://www.dfki.de" target=”_blank” style="color: blue;">DFKI</a></p>
+  <div style="display: inline; width:1200pt; height:600pt ">
+    <div style="float: left;width:80%;height:100%;border-color: #333333;border-style: solid;border-width: 3;">
+      <div id="GraphContainer">
+        <div class="container">
+          <div class="widget">
+            <p>Capacitive Sensor 1</p>
+            <div class="plot" id="plot_Cap_1"></div>
+          </div>
+          <div class="widget">
+            <p>Capacitive Sensor 2</p>
+            <div class="plot" id="plot_Cap_2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div style="display: inline-block;margin-left: 10pt;">
+          <div>
+            <p style="display: inline-block;">Cap_1_1: </p>
+            <p id="cap_1_1" style="display: inline-block;">0</p>
+          </div>
+          <div>
+            <p style="display: inline-block;">Cap_1_2: </p>
+            <p id="cap_1_2" style="display: inline-block;">0</p>
+          </div>
+          <div>
+            <p style="display: inline-block;">Cap_1_3: </p>
+            <p id="cap_1_3" style="display: inline-block;">0</p>
+          </div>
+          <div>
+            <p style="display: inline-block;">Cap_1_4: </p>
+            <p id="cap_1_4" style="display: inline-block;">0</p>
+          </div>
+          <div>
+            <p style="display: inline-block;">Sampling Rate: </p>
+            <p id="sampling" style="display: inline-block;">0</p>
+          </div>
+        </div>
+        <div style="display: inline-block;margin-left: 10pt;">
+          <div>
+            <p style="display: inline-block;">Cap_2_1: </p>
+            <p id="cap_2_1" style="display: inline-block;">0</p>
+          </div>
+          <div>
+            <p style="display: inline-block;">Cap_2_2: </p>
+            <p id="cap_2_2" style="display: inline-block;">0</p>
+          </div>
+          <div>
+            <p style="display: inline-block;">Cap_2_3: </p>
+            <p id="cap_2_3" style="display: inline-block;">0</p>
+          </div>
+          <div>
+            <p style="display: inline-block;">Cap_2_4: </p>
+            <p id="cap_2_4" style="display: inline-block;">0</p>
+          </div>
+        </div>
+
+        <div></div>
+      </div>
+    </div>
+
+    <div style="float: right;width:14%; height: 100%;border-color: #333333;border-style: solid; border-width: 0.1pt;">
+      <p style="float: middle; border-style:solid; border-color: #333333; margin:20px">CONTROLS</p>
+      <p styple="font-size:10px"> Connection </p>
+      <button id="ConnectButton"></button>
+      <div style="display: inline-block;margin-left: 10px" id="infoBar">Click to connect via BLE</div>
+      <!--
+      <p>
+      <div style="display: inline-block;margin-left: 10px; font-size: 14px;" id="WearInfo">Wearer</div>
+      <button id="WearIndicator" style="float:right; background-color: grey;"></button>
+      </p>
+      -->
+      <p>
+      <div style="display: inline-block;margin-left: 10px; font-size: 14px;" id="BatInfo">Battery</div>
+      <button id="BatIndicator" style="float:right; background-color: grey;"></button></p>
+
+
+      <div style="display: inline-block;margin-left: 10px; font-size: 14px;">Graphs</div>
+      <input type="checkbox" id="UseGraphs">
+
+
+      <p>
+        <a download="data.json" href="javascript:download()" id="downloadJson" style="color: red;">Save Data to JSON
+          File</a>
+      </p>
+      <!--
+      <p>command</p>
+      <div style="float: right;text-align: center;width:100%">
+        <button id="CMD-left" style="float: left">
+          <<- </button>
+            <button id="CMD-evac" style="float: middle"> !!! </button>
+            <button id="CMD-right" style="float: right"> ->> </button>
+      </div>
+      <button id="LocalButton"></button>
+      <div style="display: inline-block;margin-left: 10px" id="LocalinfoBar">Click to use local data simulation</div>
+      -->
+    </div>
+  </div>
+</body>
+<script type='text/javascript'>
+  /*
+  A Web Bluetooth connection demo with HeadSense Health Mask
+  gathering three characteristics from a 3-axis accelerometer, 2x barometers, ir and red from pulseoximeter
+  created 6 Aug 2018
+  by Bo Zhou
+  */
+
+  var graphWindow = 100; // window size for plotting
+  // BLE device
+  var myDevice;
+  var myCharacteristics;
+  var myCharTX;
+  var myCharRX;
+  var mTic = new Date().getTime();
+  var counter = 1;
+
+  const ConnectButton = document.getElementById('ConnectButton');
+  const infoBar = document.getElementById('infoBar');
+  var mConnected = 0;
+  if ("bluetooth" in navigator) {
+    ConnectButton.addEventListener('click', function (event) {
+      connect(); //kis_ble.js
+      mConnected = 1;
+    });
+  } else { // else the browser doesn't support bluetooth
+    status("browser not supported"); ConnectButton.style.backgroundColor = "red";
+    alert("Error: This browser doesn't support Web Bluetooth. Try using Chrome.");
+  }
+
+  initGraph();
+  //disable Graphs at the beginning
+  document.getElementById("GraphContainer").style.display = "none"
+
+
+</script>
+
+</html>
