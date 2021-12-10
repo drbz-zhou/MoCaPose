@@ -42,37 +42,37 @@ void Cap_2214::Channel_Select(uint8_t Ch_Mask, uint16_t Sample_Rate, uint8_t Add
       write_Cap(Cap_2214_SETTLECOUNT_CH0, 0x012C, Add);     // 25.05.2021 300
 		  //write_Cap(Cap_2214_RCOUNT_CH0, 0xFFFF, Add);
       //0x2FFF: around 50Hz(four channel)   0xFFFF: around 10Hz(four channel)  0x4FFF: around 30Hz(four channel)
-      write_Cap(Cap_2214_RCOUNT_CH0, 0x4FFF, Add);   // drop reslution, increase conversion speed
+      write_Cap(Cap_2214_RCOUNT_CH0, Sample_Rate, Add);   // drop reslution, increase conversion speed
 		  write_Cap(Cap_2214_OFFSET_CH0, 0x0000, Add);
-      //write_Cap(Cap_2214_CLOCK_DIVIDERS_CH0, 0x2001, Add);   // 25.05.2021  0.01 to 10 MHz, single mode
-      write_Cap(Cap_2214_CLOCK_DIVIDERS_CH0, 0x1001, Add);   // 25.05.2021  0.01 to 8.75MHz, double mode
+      //write_Cap(Cap_2214_CLOCK_DIVIDERS_CH0, 0x2001, Add);  // 25.05.2021  0.01 to 10 MHz, single mode
+      write_Cap(Cap_2214_CLOCK_DIVIDERS_CH0, 0x1001, Add);  // 25.05.2021  0.01 to 8.75MHz, double mode
 		  write_Cap(Cap_2214_DRIVE_CH0, 0xF800, Add);
 	}
 	// select ch2:
 	if (Ch_Mask & 0x02) {
 		  write_Cap(Cap_2214_SETTLECOUNT_CH1, 0x012C, Add);
 		  //write_Cap(Cap_2214_RCOUNT_CH1, 0xFFFF, Add);
-      write_Cap(Cap_2214_RCOUNT_CH1, 0x4FFF, Add);   // drop reslution, increase conversion speed
+      write_Cap(Cap_2214_RCOUNT_CH1, Sample_Rate, Add);   // drop reslution, increase conversion speed
 		  write_Cap(Cap_2214_OFFSET_CH1, 0x0000, Add);
-		  write_Cap(Cap_2214_CLOCK_DIVIDERS_CH1, 0x1001, Add);
+		  write_Cap(Cap_2214_CLOCK_DIVIDERS_CH1, 0x1001, Add); // 25.05.2021  0.01 to 8.75MHz, double mode
 		  write_Cap(Cap_2214_DRIVE_CH1, 0xF800, Add);
 	}
     // select ch3:
 	if (Ch_Mask & 0x04) {
 		  write_Cap(Cap_2214_SETTLECOUNT_CH2, 0x012C, Add);
 		  //write_Cap(Cap_2214_RCOUNT_CH2, 0xFFFF, Add);
-      write_Cap(Cap_2214_RCOUNT_CH2, 0x4FFF, Add);   // drop reslution, increase conversion speed
-		  write_Cap(Cap_2214_OFFSET_CH2, 0x0000, Add);
-		  write_Cap(Cap_2214_CLOCK_DIVIDERS_CH2, 0x1001, Add);
+      write_Cap(Cap_2214_RCOUNT_CH2, Sample_Rate, Add);   // drop reslution, increase conversion speed
+		  write_Cap(Cap_2214_OFFSET_CH2, 0x0000, Add); 
+		  write_Cap(Cap_2214_CLOCK_DIVIDERS_CH2, 0x1001, Add); // 25.05.2021  0.01 to 8.75MHz, double mode
 		  write_Cap(Cap_2214_DRIVE_CH2, 0xF800, Add);
 	}
     // select ch4:
 	if (Ch_Mask & 0x08) {
 		write_Cap(Cap_2214_SETTLECOUNT_CH3, 0x012C, Add);
 		//write_Cap(Cap_2214_RCOUNT_CH3, 0xFFFF, Add);
-    write_Cap(Cap_2214_RCOUNT_CH3, 0x4FFF, Add);   // drop reslution, increase conversion speed
+    write_Cap(Cap_2214_RCOUNT_CH3, Sample_Rate, Add);   // drop reslution, increase conversion speed
 		write_Cap(Cap_2214_OFFSET_CH3, 0x0000, Add);
-		write_Cap(Cap_2214_CLOCK_DIVIDERS_CH3, 0x1001, Add);
+		write_Cap(Cap_2214_CLOCK_DIVIDERS_CH3, 0x1001, Add); // 25.05.2021  0.01 to 8.75MHz, double mode
 		write_Cap(Cap_2214_DRIVE_CH3, 0xF800, Add);
 	}	
 

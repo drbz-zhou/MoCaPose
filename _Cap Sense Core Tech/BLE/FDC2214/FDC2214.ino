@@ -84,13 +84,13 @@ void setup()
   //Start FDC, select the channels being used, select the I2C address
   //Sample Rate:  0x2FFF: around 50Hz(four channel)   0xFFFF: around 10Hz(four channel)  0x4FFF: around 30Hz(four channel), not for sure, test when using.
   
-  bool Cap_init = Cap.init(0xF, 0x2A, 0x2FFF);  
+  bool Cap_init = Cap.init(0xF, 0x2A, 0xFFFF);  
   if (Cap_init) Serial.println("FDC passed");  
   else Serial.println("FDC failed");  
   delay(5); 
  
   // second sensing board
-  bool Cap_1_init = Cap_1.init(0xF, 0x2B, 0x2FFF);  
+  bool Cap_1_init = Cap_1.init(0xF, 0x2B, 0xFFFF);  
   if (Cap_1_init) Serial.println("FDC passed");  
   else Serial.println("FDC failed");  
   
