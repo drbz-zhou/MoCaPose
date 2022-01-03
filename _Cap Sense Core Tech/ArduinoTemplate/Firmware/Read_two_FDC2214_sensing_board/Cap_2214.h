@@ -57,6 +57,7 @@ private:
     void Channel_Select(uint8_t Ch_Mask, uint16_t Sample_Rate);
     void write_Cap(uint16_t address, uint16_t data);
     uint16_t read_Cap(uint16_t address);
+    uint8_t i2caddr;
     
 };
 

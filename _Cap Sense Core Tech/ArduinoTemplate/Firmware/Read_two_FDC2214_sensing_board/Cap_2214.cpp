@@ -16,7 +16,7 @@
 
 
 // address
-uint8_t i2caddr;
+// uint8_t i2caddr;
 //uint8_t i2caddr = 0x2B;
 
 // Verify the chip
