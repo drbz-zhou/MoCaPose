@@ -50,13 +50,14 @@
 
 class Cap_2214 {
 public:
-    boolean init(uint8_t CHs);
+    boolean init(uint8_t CHs, uint8_t Add, uint16_t Sample_Rate);
     unsigned long Read(uint8_t Ch);
 
 private:
-    void Channel_Select(uint8_t Ch_Mask);
+    void Channel_Select(uint8_t Ch_Mask, uint16_t Sample_Rate);
     void write_Cap(uint16_t address, uint16_t data);
     uint16_t read_Cap(uint16_t address);
+    uint8_t i2caddr;
     
 };
 
