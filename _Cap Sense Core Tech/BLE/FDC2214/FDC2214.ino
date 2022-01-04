@@ -87,7 +87,6 @@ void setup()
   bool Cap_init = Cap.init(0xF, 0x2A, 0xFFFF);  
   if (Cap_init) Serial.println("FDC passed");  
   else Serial.println("FDC failed");  
-  delay(5); 
  
   // second sensing board
   bool Cap_1_init = Cap_1.init(0xF, 0x2B, 0xFFFF);  
@@ -100,7 +99,7 @@ void loop()
 {
   for (int i = 0; i < CHAN_COUNT; i++)
   { // for each channel of first Cap Module
-    datapaket[i] = Cap.Read(i,0x2A);
+    datapaket[i] = Cap.Read(i);
     /*
     Serial.print(datapaket[i]);
     if (i < CHAN_COUNT - 1)
@@ -112,7 +111,7 @@ void loop()
   
   for (int i = 0; i < CHAN_COUNT; i++)
   { // for each channel of second Cap Module
-    datapaket[i+4] =  Cap_1.Read(i,0x2B);
+    datapaket[i+4] =  Cap_1.Read(i);
     /*
     Serial.print(datapaket[i+4]);  
     if (i < CHAN_COUNT-1) Serial.print(",");
