@@ -40,7 +40,7 @@ function initGraph() {
       margin: { l: 30, r: 30, b: 25, t: 25 },
       color: '#000001',
       'xaxis': { 'range': [frameBufferSize], 'autorange': "true" },
-      'yaxis': { 'range': [28000000, 30000000] }
+      'yaxis': { 'range': [10000000, 30000000] }
     });
 
   Plotly.plot('plot_Cap_2', traceData_Cap_2,
@@ -50,7 +50,7 @@ function initGraph() {
       margin: { l: 30, r: 30, b: 25, t: 25 },
       color: '#000001',
       'xaxis': { 'range': [frameBufferSize], 'autorange': "true" },
-      'yaxis': { 'range': [28000000, 30000000] }
+      'yaxis': { 'range': [10000000, 30000000] }
     });
 }
 

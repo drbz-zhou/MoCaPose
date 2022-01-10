@@ -36,7 +36,8 @@ function connect() {
       myCharRX.startNotifications();
 
     }
-    infoBar.innerHTML = "Connected"; ConnectButton.style.backgroundColor = "#00ffff";
+    infoBar.innerHTML = `Connected to ${BluetoothName}`; ConnectButton.style.backgroundColor = "#00ffff";
+    document.getElementById("BluetoothName").innerHTML = BluetoothName;
   })
     .catch(function (error) {
       // catch any errors:
