@@ -3,8 +3,8 @@ var LastSaveToFile = 0;
 var prevTime = 0;
 var databundle = {
 
-  cap_1_1: 0, cap_1_2: 0, cap_1_3: 0, cap_1_4: 0,
-  cap_2_1: 0, cap_2_2: 0, cap_2_3: 0, cap_2_4: 0,
+  cap_0_0: 0, cap_0_1: 0, cap_0_2: 0, cap_0_3: 0,
+  cap_1_0: 0, cap_1_1: 0, cap_1_2: 0, cap_1_3: 0,
   time_feather: 0,
   time_unix: 0
 }
@@ -13,14 +13,14 @@ var databundle = {
 function handleData(event) {
   // get the data  from the peripheral:
   //console.log(event.target.value)
-  databundle.cap_1_1 = event.target.value.getInt32(0, true);  //0
-  databundle.cap_1_2 = event.target.value.getInt32(4, true);  //1
-  databundle.cap_1_3 = event.target.value.getInt32(8, true);  //2
-  databundle.cap_1_4 = event.target.value.getInt32(12, true); //3
-  databundle.cap_2_1 = event.target.value.getInt32(16, true); //4
-  databundle.cap_2_2 = event.target.value.getInt32(20, true); //5
-  databundle.cap_2_3 = event.target.value.getInt32(24, true); //6
-  databundle.cap_2_4 = event.target.value.getInt32(28, true); //7
+  databundle.cap_0_0 = event.target.value.getInt32(0, true);  //0
+  databundle.cap_0_1 = event.target.value.getInt32(4, true);  //1
+  databundle.cap_0_2 = event.target.value.getInt32(8, true);  //2
+  databundle.cap_0_3 = event.target.value.getInt32(12, true); //3
+  databundle.cap_1_0 = event.target.value.getInt32(16, true); //4
+  databundle.cap_1_1 = event.target.value.getInt32(20, true); //5
+  databundle.cap_1_2 = event.target.value.getInt32(24, true); //6
+  databundle.cap_1_3 = event.target.value.getInt32(28, true); //7
   databundle.time_feather = event.target.value.getInt32(32, true); //8
 
   databundle.time_unix = new Date().getTime();
