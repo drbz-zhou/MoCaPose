@@ -51,9 +51,15 @@ function handleData(event) {
 
 //Save Data to File
 function download() {
+  var customFileName = document.getElementById('customFileName').value
   var element = document.createElement('a');
   element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(StorageData, null, 2)));
-  element.setAttribute('download', `${BluetoothName}.json`);
+  if (customFileName == "") {
+    element.setAttribute('download', `${BluetoothName}.json`);
+  }
+  else {
+    element.setAttribute('download', `${customFileName}-${BluetoothName}.json`);
+  }
   element.style.display = 'none';
   document.body.appendChild(element);
   element.click();

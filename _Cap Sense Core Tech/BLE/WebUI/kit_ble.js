@@ -17,7 +17,7 @@ function connect() {
     myDevice = device;
     BluetoothName = device.name
     console.log(myDevice);
-    status('Connecting to GATT server...'); return device.gatt.connect();
+    status('Conn. to GATT server...'); return device.gatt.connect();
   }).then(function (server) {
     status('Getting service...'); return server.getPrimaryService(imuService);
   }).then(function (service) {

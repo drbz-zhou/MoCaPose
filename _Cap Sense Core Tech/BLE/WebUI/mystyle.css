@@ -1,13 +1,10 @@
-body {
-  background-color: #000001;
-}
 body,
 h1,
 p {
   font-size: 10px;
   margin: 16;
-  background: #000001;
-  color: #aaaaaa;
+  background: #2e2e2e;
+  color: #ffffff;
 }
 p {
   font-size: 15px;
@@ -24,9 +21,9 @@ h1 {
   text-align: center;
   text-decoration: none;
   font-size: 4px;
-  margin: 4px 10px;
-  height: 20px;
-  width: 20px;
+  margin: 10px 10px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   outline: none;
 }
