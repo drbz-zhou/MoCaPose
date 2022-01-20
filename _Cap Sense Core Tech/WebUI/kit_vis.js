@@ -35,20 +35,22 @@ function initGraph() {
   });
   Plotly.plot('plot_Cap_0', traceData_Cap_0,
     {
-      plot_bgcolor: '#000001',
-      paper_bgcolor: '#000001',
+      plot_bgcolor: '#2e2e2e',
+      paper_bgcolor: '#2e2e2e',
+      font: { color: '#ffffff' },
       margin: { l: 30, r: 30, b: 25, t: 25 },
-      color: '#000001',
+      color: '#2e2e2e',
       'xaxis': { 'range': [frameBufferSize], 'autorange': "true" },
       'yaxis': { 'range': [13500000, 15500000] }
     });
 
   Plotly.plot('plot_Cap_1', traceData_Cap_1,
     {
-      plot_bgcolor: '#000001',
-      paper_bgcolor: '#000001',
+      plot_bgcolor: '#2e2e2e',
+      paper_bgcolor: '#2e2e2e',
+      font: { color: '#ffffff' },
       margin: { l: 30, r: 30, b: 25, t: 25 },
-      color: '#000001',
+      color: '#2e2e2e',
       'xaxis': { 'range': [frameBufferSize], 'autorange': "true" },
       'yaxis': { 'range': [13500000, 15500000] }
     });
