@@ -42,7 +42,7 @@ function handleData(event) {
   updateData(databundle);
 
   //Store Data and download file after specific intervall
-  StorageData.push(JSON.parse(JSON.stringify(databundle)))
+  StorageData.push(Object.assign({}, databundle));
   if (new Date().getTime() - LastSaveToFile > 300000) {
     download()
     LastSaveToFile = new Date().getTime();
