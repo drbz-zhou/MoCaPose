@@ -66,4 +66,9 @@ function download() {
   document.body.removeChild(element);
 }
 
+function resetRecording() {
+  StorageData = [];
+  LastSaveToFile = new Date().getTime();
+}
+
 
