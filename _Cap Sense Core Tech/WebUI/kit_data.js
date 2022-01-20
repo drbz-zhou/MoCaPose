@@ -24,9 +24,8 @@ function handleData(event) {
   databundle.time_feather = event.target.value.getInt32(32, true); //8
 
   databundle.time_unix = new Date().getTime();
-
   //calculate sampling rate
-  document.getElementById("sampling").innerHTML = Math.round(1000 / (databundle.time_unix - prevTime));
+  document.getElementById("sampling").innerHTML = Math.trunc(1000 / (databundle.time_unix - prevTime));
   prevTime = databundle.time_unix;
 
   // update plots if selected
