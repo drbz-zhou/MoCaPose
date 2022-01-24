@@ -17,7 +17,7 @@
   <h1 id="BluetoothName">&nbsp;</h1>
   <p> a Dashboard by <a href="https://www.dfki.de" target=”_blank” style="color: blue;">DFKI</a></p>
   <div style="display: inline; width:1200pt; height:600pt ">
-    <div style="float: left;width:80%;height:100%;border-color: #000000;border-style: solid;border-width: 3;">
+    <div style="float: left;width:68%;height:100%;border-color: #000000;border-style: solid;border-width: 3;">
       <div id="GraphContainer">
         <div class="container">
           <div class="widget">
@@ -76,19 +76,20 @@
       </div>
     </div>
 
-    <div style="float: right;width:14%; height: 100%;border-color: #000000;border-style: solid">
+    <div style="float: right;width:28%; height: 100%;border-color: #000000;border-style: solid">
       <p style="float: middle; border-style:solid; border-color: #000000; margin:20px">CONTROLS</p>
-      <div style="display: flex; align-items: center; margin-bottom: 20px;">
+      <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
         <button id="ConnectButton"></button>
         <p style="display: inline-block;margin-left: 0px" id="infoBar">Click to connect via BLE</p>
       </div>
 
-      <div style="margin-bottom: 30px;">
-        <p style="float: left; margin-bottom: 0px; margin-left: 10px;">Set Custom Filename</p>
-        <input style="display: inline-block;margin-left: 10px" type="text" id="customFileName" value="">
-
+      <div style="display: flex; justify-content: center; align-items: center;margin-bottom: 20px;">
+        <div>
+          <p style="margin: 0pt;">Set Custom Filename</p>
+          <input style="width:100%" type="text" id="customFileName" value="">
+        </div>
       </div>
-      <div style="display: flex; align-items: center; margin-bottom: 30px;">
+      <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
         <p style="display: inline-block;margin-left: 10px; font-size: 14px;">Graphs</p>
         <input style="margin-left: 10px;" type="checkbox" id="UseGraphs">
       </div>
