@@ -1,0 +1,199 @@
+body {
+  background-color: #000001;
+}
+body,
+h1,
+p {
+  font-size: 10px;
+  margin: 16;
+  background: #000001;
+  color: #aaaaaa;
+}
+p {
+  font-size: 15px;
+  text-align: center;
+}
+h1 {
+  font-size: 20px;
+}
+#ConnectButton {
+  background-color: green;
+  border: none;
+  color: black;
+  padding: 1px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 4px;
+  margin: 4px 10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  outline: none;
+}
+#ConnectButton:active {
+  transform: scale(0.9);
+}
+#LocalButton {
+  background-color: orange;
+  border: none;
+  color: black;
+  padding: 1px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 4px;
+  margin: 4px 10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  outline: none;
+}
+#LocalButton:active {
+  transform: scale(0.9);
+}
+#WearIndicator {
+  background-color: green;
+  border: none;
+  color: black;
+  padding: 1px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px 10px;
+  height: 20px;
+  width: 60px;
+  border-radius: 10%;
+  outline: none;
+}
+#BatIndicator {
+  background-color: green;
+  border: none;
+  color: black;
+  padding: 1px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 10px;
+  height: 20px;
+  width: 60px;
+  border-radius: 10%;
+  outline: none;
+  color: white;
+}
+#CMD-left {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 1px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  margin: 4px 10px;
+  height: 30px;
+  width: 40px;
+  border-radius: 10%;
+  outline: none;
+  opacity: 0.8;
+}
+#CMD-left:hover {
+  opacity: 1;
+}
+#CMD-left:active {
+  transform: scale(0.9); /* Scaling button to 0.98 to its original size */
+}
+#CMD-right {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 1px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  margin: 4px 10px;
+  height: 30px;
+  width: 40px;
+  border-radius: 10%;
+  outline: none;
+  opacity: 0.8;
+}
+#CMD-right:hover {
+  opacity: 1;
+}
+#CMD-right:active {
+  transform: scale(0.9); /* Scaling button to 0.98 to its original size */
+}
+#CMD-evac {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 1px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  margin: 4px 10px;
+  height: 30px;
+  width: 40px;
+  border-radius: 10%;
+  outline: none;
+  opacity: 0.8;
+}
+#CMD-evac:hover {
+  opacity: 1;
+}
+#CMD-evac:active {
+  transform: scale(0.9); /* Scaling button to 0.98 to its original size */
+}
+
+.container {
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 10px;
+}
+.sub-container {
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px 10px;
+}
+.widget {
+  border-style: solid;
+  border-color: #333333;
+  border-width: 0.1pt;
+  height: 100%;
+  width: 100%;
+}
+.plot {
+  height: 150pt;
+  width: 95%;
+  color: #aaaaaa;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 20px;
+  background: #333333;
+  outline: none;
+  opacity: 0.8;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: var(--thumb-color, #04aa6d);
+  cursor: pointer;
+}

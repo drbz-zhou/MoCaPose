@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>MoTraCapaci Dashboard</title>
+  <script src="plotly-latest.min.js"></script>
+  <script src="kit_data.js"></script>
+  <script src="kit_vis.js"></script>
+  <script src="kit_ble.js"></script>
+
+  <link rel="stylesheet" href="mystyle.css">
+
+</head>
+
+<body>
+  <h1>MoTraCapaci</h1>
+  <p> a Dashboard by <a href="https://www.dfki.de" target=”_blank” style="color: blue;">DFKI</a></p>
+  <div style="display: inline; width:1200pt; height:600pt ">
+    <div style="float: left;width:80%;height:100%;border-color: #333333;border-style: solid;border-width: 0;"
+      class="container">
+      <div class="widget">
+        <p>Acceleration</p>
+        <div class="plot" id="plot_Acc"></div>
+      </div>
+      <div class="widget">
+        <p>Gyroscope</p>
+        <div class="plot" id="plot_Gyr"></div>
+      </div>
+      <div class="widget">
+        <p>Magnetometer</p>
+        <div class="plot" id="plot_Mag"></div>
+      </div>
+      <div class="sub-container">
+        <div class="widget" id="Temp_box">
+          <p>Temperature</p>
+          <div class="plot" id="gauge_Temp"></div>
+        </div>
+        <div class="widget" id="Press_box">
+          <p>Pressure</p>
+          <div class="plot" id="gauge_Press"></div>
+        </div>
+        <div class="widget" id="Hum_box">
+          <p>Humidity</p>
+          <div class="plot" id="gauge_Hum"></div>
+        </div>
+      </div>
+    </div>
+    <div style="float: right;width:14%; height: 100%;border-color: #333333;border-style: solid; border-width: 0.1pt;">
+      <p style="float: middle; border-style:solid; border-color: #333333; margin:20px">CONTROLS</p>
+      <p styple="font-size:10px"> Connection </p>
+      <button id="ConnectButton"></button>
+      <div style="display: inline-block;margin-left: 10px" id="infoBar">Click to connect via BLE</div>
+      <!--
+      <p>
+      <div style="display: inline-block;margin-left: 10px; font-size: 14px;" id="WearInfo">Wearer</div>
+      <button id="WearIndicator" style="float:right; background-color: grey;"></button>
+      </p>
+      -->
+      <p>
+      <div style="display: inline-block;margin-left: 10px; font-size: 14px;" id="BatInfo">Battery</div>
+      <button id="BatIndicator" style="float:right; background-color: grey;"></button></p>
+
+      <p>set Temperature warning value</p>
+      <input type="range" min="1" max="100" value="70" class="slider" style="--thumb-color: red;" id="SliderTemp">
+      <p>set Pressure warning value</p>
+      <input type="range" min="1" max="100" value="70" class="slider" style="--thumb-color: red;" id="SliderPress">
+      <p>set Humidity warning value</p>
+      <input type="range" min="1" max="100" value="70" class="slider" style="--thumb-color: red;" id="SliderHum">
+      <p>
+        <a download="data.json" href="javascript:download()" id="downloadJson" style="color: red;">Save Data to JSON
+          File</a>
+      </p>
+      <!--
+      <p>command</p>
+      <div style="float: right;text-align: center;width:100%">
+        <button id="CMD-left" style="float: left">
+          <<- </button>
+            <button id="CMD-evac" style="float: middle"> !!! </button>
+            <button id="CMD-right" style="float: right"> ->> </button>
+      </div>
+      <button id="LocalButton"></button>
+      <div style="display: inline-block;margin-left: 10px" id="LocalinfoBar">Click to use local data simulation</div>
+      -->
+    </div>
+  </div>
+</body>
+<script type='text/javascript'>
+  /*
+  A Web Bluetooth connection demo with HeadSense Health Mask
+  gathering three characteristics from a 3-axis accelerometer, 2x barometers, ir and red from pulseoximeter
+  created 6 Aug 2018
+  by Bo Zhou
+  */
+  var graphWindow = 100; // window size for plotting
+  // BLE device
+  var myDevice;
+  var myCharacteristics;
+  var myCharTX;
+  var myCharRX;
+  var mTic = new Date().getTime();
+  var counter = 1;
+
+  const ConnectButton = document.getElementById('ConnectButton');
+  const infoBar = document.getElementById('infoBar');
+  var mConnected = 0;
+  if ("bluetooth" in navigator) {
+    ConnectButton.addEventListener('click', function (event) {
+      connect(); //kis_ble.js
+      mConnected = 1;
+    });
+  } else { // else the browser doesn't support bluetooth
+    status("browser not supported"); ConnectButton.style.backgroundColor = "red";
+    alert("Error: This browser doesn't support Web Bluetooth. Try using Chrome.");
+  }
+
+  // command buttons send to BLE TX
+  /*
+  const CMDleft = document.getElementById('CMD-left');
+  const CMDevac = document.getElementById('CMD-evac');
+  const CMDright = document.getElementById('CMD-right');
+  var mCMDqueued = 0;
+  var mCMD = "";
+  CMDleft.addEventListener('click', function (event) {
+    console.log("CMD: left");
+    mCMDqueued = 1;
+    mCMD = "R";
+  });
+  CMDright.addEventListener('click', function (event) {
+    console.log("CMD: right");
+    mCMDqueued = 1;
+    mCMD = "L";
+  });
+  CMDevac.addEventListener('click', function (event) {
+    console.log("CMD: evac");
+    mCMDqueued = 1;
+    mCMD = "Y";
+  });
+  */
+
+  var slider_Temp = document.getElementById("SliderTemp");
+  slider_Temp.onmouseup = function () {
+    console.log("mouseup: " + this.value);
+    // update bluetooth command here
+    threshold.temp = this.value / 100 * (ranges.temp[1] - ranges.temp[0]) + ranges.temp[0];
+    Plotly.update('gauge_Temp', { 'gauge.threshold.value': threshold.temp });
+  }
+  slider_Temp.onchange = function () {
+    console.log("onchange: " + this.value);
+    // update bluetooth command here
+    threshold.temp = this.value / 100 * (ranges.temp[1] - ranges.temp[0]) + ranges.temp[0];
+    Plotly.update('gauge_Temp', { 'gauge.threshold.value': threshold.temp });
+  }
+
+  var slider_Press = document.getElementById("SliderPress");
+  slider_Press.onmouseup = function () {
+    console.log("mouseup: " + this.value);
+    // update bluetooth command here  myCharTX.writeValue(encoder.encode("cmd-left")); //kis_ble.js
+    threshold.press = this.value / 100 * (ranges.press[1] - ranges.press[0]) + ranges.press[0];
+    Plotly.update('gauge_Press', { 'gauge.threshold.value': threshold.press });
+  }
+  slider_Press.onchange = function () {
+    console.log("onchange: " + this.value);
+    // update bluetooth command here  myCharTX.writeValue(encoder.encode("cmd-left")); //kis_ble.js
+    threshold.press = this.value / 100 * (ranges.press[1] - ranges.press[0]) + ranges.press[0];
+    Plotly.update('gauge_Press', { 'gauge.threshold.value': threshold.press });
+  }
+
+  var slider_Hum = document.getElementById("SliderHum");
+  slider_Hum.onmouseup = function () {
+    console.log("onmouseup: " + this.value)
+    // update bluetooth command here
+    threshold.hum = this.value / 100 * (ranges.hum[1] - ranges.hum[0]) + ranges.hum[0];
+    Plotly.update('gauge_Hum', { 'gauge.threshold.value': threshold.hum });
+  }
+  slider_Hum.onchange = function () {
+    console.log("onchange: " + this.value)
+    // update bluetooth command here
+    threshold.hum = this.value / 100 * (ranges.hum[1] - ranges.hum[0]) + ranges.hum[0];
+    Plotly.update('gauge_Hum', { 'gauge.threshold.value': threshold.hum });
+  }
+
+  // initialize
+  initGraph();
+
+
+  //Only for DEMO
+  /*
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+  async function demo() {
+    while (1) {
+      //setTimeout(handleDataLocal(), 1000);
+      await sleep(50);
+      handleDataLocal()
+    }
+  }
+  const LocalButton = document.getElementById('LocalButton');
+  LocalButton.addEventListener('click', function (event) {
+    if (mConnected == 0) {
+      demo();
+    }
+  });
+  */
+
+</script>
+
+</html>
