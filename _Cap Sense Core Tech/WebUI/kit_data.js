@@ -1,6 +1,7 @@
 var StorageData = []
 var LastSaveToFile = 0;
-var prevTime = 0;
+var SamplingStart = 0;
+var SamplingCounter = 0;
 var databundle = {
 
   cap_0_0: 0, cap_0_1: 0, cap_0_2: 0, cap_0_3: 0,
@@ -24,9 +25,14 @@ function handleData(event) {
   databundle.time_feather = event.target.value.getInt32(32, true); //8
 
   databundle.time_unix = new Date().getTime();
+
   //calculate sampling rate
-  document.getElementById("sampling").innerHTML = Math.trunc(1000 / (databundle.time_unix - prevTime));
-  prevTime = databundle.time_unix;
+  SamplingCounter += 1;
+  if ((databundle.time_unix - SamplingStart) > 1000) {
+    SamplingStart = databundle.time_unix;
+    document.getElementById("sampling").innerHTML = SamplingCounter;
+    SamplingCounter = 0;
+  }
 
   // update plots if selected
   if (document.getElementById("UseGraphs").checked == true) {
