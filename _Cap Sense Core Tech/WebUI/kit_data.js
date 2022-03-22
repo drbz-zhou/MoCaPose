@@ -49,13 +49,21 @@ function handleData(event) {
   //Store Data and download file after specific intervall
   StorageData.push(Object.assign({}, databundle));
   if (new Date().getTime() - LastSaveToFile > 300000) {
-    download()
+    download(false)
     LastSaveToFile = new Date().getTime();
   }
 }
 
 //Save Data to File
-function download() {
+function download(buttonClick) {
+  //Change Button Color for 500ms to improve usability
+  if (buttonClick === true) {
+    var el = document.getElementById('downloadJson');
+    var original = el.style.color;
+    el.style.color = 'green';
+    window.setTimeout(function () { el.style.color = original; }, 500);
+  }
+
   var customFileName = document.getElementById('customFileName').value
   var element = document.createElement('a');
   element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(StorageData, null, 2)));
@@ -72,6 +80,12 @@ function download() {
 }
 
 function resetRecording() {
+  //Change Button Color for 500ms to improve usability
+  var el = document.getElementById('resetRecording');
+  var original = el.style.color;
+  el.style.color = 'green';
+  window.setTimeout(function () { el.style.color = original; }, 500);
+
   StorageData = [];
   LastSaveToFile = new Date().getTime();
 }
