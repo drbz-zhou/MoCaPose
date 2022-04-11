@@ -67,11 +67,20 @@ function download(buttonClick) {
   var customFileName = document.getElementById('customFileName').value
   var element = document.createElement('a');
   element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(StorageData, null, 2)));
+
+  //special case for Jacket to add L and R to filename
+  BluetoothNameFile = BluetoothName;
+  if (BluetoothName === "LeftArm") {
+    BluetoothNameFile = "L";
+  }
+  if (BluetoothName === "RightArm") {
+    BluetoothNameFile = "R";
+  }
   if (customFileName == "") {
-    element.setAttribute('download', `${BluetoothName}.json`);
+    element.setAttribute('download', `${BluetoothNameFile}.json`);
   }
   else {
-    element.setAttribute('download', `${customFileName}-${BluetoothName}.json`);
+    element.setAttribute('download', `${customFileName}_${BluetoothNameFile}.json`);
   }
   element.style.display = 'none';
   document.body.appendChild(element);
