@@ -1,0 +1,1055 @@
+EESchema Schematic File Version 5
+EELAYER 36 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
+$EndDescr
+Connection ~ 1600 3450
+Connection ~ 3800 3450
+Connection ~ 3900 3000
+Connection ~ 4150 2900
+Connection ~ 4200 4800
+Connection ~ 5050 4900
+Connection ~ 5050 5200
+Connection ~ 5450 4900
+Connection ~ 5450 5200
+Connection ~ 7200 1500
+Connection ~ 7200 2300
+Connection ~ 7200 2500
+Connection ~ 7200 3300
+Connection ~ 7200 3550
+Connection ~ 7200 4350
+Connection ~ 7200 4600
+Connection ~ 7200 5400
+Connection ~ 9800 4800
+Connection ~ 10650 4900
+Connection ~ 10650 5200
+Connection ~ 11050 4900
+Connection ~ 11050 5200
+Connection ~ 12800 1500
+Connection ~ 12800 2300
+Connection ~ 12800 2500
+Connection ~ 12800 3300
+Connection ~ 12800 3550
+Connection ~ 12800 4350
+Connection ~ 12800 4600
+Connection ~ 12800 5400
+Wire Wire Line
+	1250 3450 1600 3450
+Wire Wire Line
+	1250 3650 1250 3450
+Wire Wire Line
+	3400 3450 3100 3450
+Wire Wire Line
+	3700 3450 3800 3450
+Wire Wire Line
+	3800 3450 4450 3450
+Wire Wire Line
+	3800 3600 3800 3450
+Wire Wire Line
+	3900 2750 3900 3000
+Wire Wire Line
+	3900 3000 3750 3000
+Wire Wire Line
+	4150 2750 4150 2900
+Wire Wire Line
+	4150 2900 3750 2900
+Wire Wire Line
+	4200 3000 3900 3000
+Wire Wire Line
+	4200 3350 4200 3000
+Wire Wire Line
+	4200 4650 4200 4800
+Wire Wire Line
+	4200 4800 4000 4800
+Wire Wire Line
+	4200 4950 4200 4800
+Wire Wire Line
+	4300 2900 4150 2900
+Wire Wire Line
+	4300 3250 4300 2900
+Wire Wire Line
+	4450 3250 4300 3250
+Wire Wire Line
+	4450 3350 4200 3350
+Wire Wire Line
+	4450 3550 4450 4800
+Wire Wire Line
+	4450 4800 4200 4800
+Wire Wire Line
+	4850 4150 4850 4450
+Wire Wire Line
+	4950 1500 7200 1500
+Wire Wire Line
+	4950 2650 4950 1500
+Wire Wire Line
+	4950 4150 4950 4600
+Wire Wire Line
+	5050 2300 7200 2300
+Wire Wire Line
+	5050 2650 5050 2300
+Wire Wire Line
+	5050 4150 5050 4900
+Wire Wire Line
+	5050 5200 5450 5200
+Wire Wire Line
+	5150 2500 7200 2500
+Wire Wire Line
+	5150 2650 5150 2500
+Wire Wire Line
+	5250 2650 6850 2650
+Wire Wire Line
+	5450 4900 5050 4900
+Wire Wire Line
+	5450 5200 5850 5200
+Wire Wire Line
+	5650 3250 6750 3250
+Wire Wire Line
+	5650 3350 6650 3350
+Wire Wire Line
+	5650 3450 6550 3450
+Wire Wire Line
+	5650 3550 6450 3550
+Wire Wire Line
+	5850 4900 5450 4900
+Wire Wire Line
+	6450 3550 6450 5400
+Wire Wire Line
+	6450 5400 7200 5400
+Wire Wire Line
+	6550 3450 6550 4600
+Wire Wire Line
+	6550 4600 7200 4600
+Wire Wire Line
+	6650 3350 6650 4350
+Wire Wire Line
+	6650 4350 7200 4350
+Wire Wire Line
+	6750 3250 6750 3550
+Wire Wire Line
+	6750 3550 7200 3550
+Wire Wire Line
+	6850 2650 6850 3300
+Wire Wire Line
+	6850 3300 7200 3300
+Wire Wire Line
+	7200 1500 7550 1500
+Wire Wire Line
+	7200 2300 7550 2300
+Wire Wire Line
+	7200 2500 7550 2500
+Wire Wire Line
+	7200 3300 7550 3300
+Wire Wire Line
+	7200 4350 7550 4350
+Wire Wire Line
+	7200 4600 7550 4600
+Wire Wire Line
+	7200 5400 7550 5400
+Wire Wire Line
+	7550 1500 7550 1800
+Wire Wire Line
+	7550 2300 7550 2100
+Wire Wire Line
+	7550 2500 7550 2750
+Wire Wire Line
+	7550 3300 7550 3050
+Wire Wire Line
+	7550 3550 7200 3550
+Wire Wire Line
+	7550 3850 7550 3550
+Wire Wire Line
+	7550 4350 7550 4150
+Wire Wire Line
+	7550 4600 7550 4850
+Wire Wire Line
+	7550 5400 7550 5150
+Wire Wire Line
+	9350 2900 9900 2900
+Wire Wire Line
+	9350 3000 9800 3000
+Wire Wire Line
+	9400 3450 10050 3450
+Wire Wire Line
+	9400 3600 9400 3450
+Wire Wire Line
+	9800 3350 9800 3000
+Wire Wire Line
+	9800 4650 9800 4800
+Wire Wire Line
+	9800 4800 9600 4800
+Wire Wire Line
+	9800 4950 9800 4800
+Wire Wire Line
+	9900 3250 9900 2900
+Wire Wire Line
+	10050 3250 9900 3250
+Wire Wire Line
+	10050 3350 9800 3350
+Wire Wire Line
+	10050 3550 10050 4800
+Wire Wire Line
+	10050 4800 9800 4800
+Wire Wire Line
+	10450 4150 10450 4450
+Wire Wire Line
+	10550 1500 12800 1500
+Wire Wire Line
+	10550 2650 10550 1500
+Wire Wire Line
+	10550 4150 10550 4600
+Wire Wire Line
+	10650 2300 12800 2300
+Wire Wire Line
+	10650 2650 10650 2300
+Wire Wire Line
+	10650 4150 10650 4900
+Wire Wire Line
+	10650 5200 11050 5200
+Wire Wire Line
+	10750 2500 12800 2500
+Wire Wire Line
+	10750 2650 10750 2500
+Wire Wire Line
+	10850 2650 12450 2650
+Wire Wire Line
+	11050 4900 10650 4900
+Wire Wire Line
+	11050 5200 11450 5200
+Wire Wire Line
+	11250 3250 12350 3250
+Wire Wire Line
+	11250 3350 12250 3350
+Wire Wire Line
+	11250 3450 12150 3450
+Wire Wire Line
+	11250 3550 12050 3550
+Wire Wire Line
+	11450 4900 11050 4900
+Wire Wire Line
+	12050 3550 12050 5400
+Wire Wire Line
+	12050 5400 12800 5400
+Wire Wire Line
+	12150 3450 12150 4600
+Wire Wire Line
+	12150 4600 12800 4600
+Wire Wire Line
+	12250 3350 12250 4350
+Wire Wire Line
+	12250 4350 12800 4350
+Wire Wire Line
+	12350 3250 12350 3550
+Wire Wire Line
+	12350 3550 12800 3550
+Wire Wire Line
+	12450 2650 12450 3300
+Wire Wire Line
+	12450 3300 12800 3300
+Wire Wire Line
+	12800 1500 13150 1500
+Wire Wire Line
+	12800 2300 13150 2300
+Wire Wire Line
+	12800 2500 13150 2500
+Wire Wire Line
+	12800 3300 13150 3300
+Wire Wire Line
+	12800 4350 13150 4350
+Wire Wire Line
+	12800 4600 13150 4600
+Wire Wire Line
+	12800 5400 13150 5400
+Wire Wire Line
+	13150 1500 13150 1800
+Wire Wire Line
+	13150 2300 13150 2100
+Wire Wire Line
+	13150 2500 13150 2750
+Wire Wire Line
+	13150 3300 13150 3050
+Wire Wire Line
+	13150 3550 12800 3550
+Wire Wire Line
+	13150 3850 13150 3550
+Wire Wire Line
+	13150 4350 13150 4150
+Wire Wire Line
+	13150 4600 13150 4850
+Wire Wire Line
+	13150 5400 13150 5150
+Text GLabel 1050 750  0    50   Input ~ 0
+IN3B
+Text GLabel 1050 850  0    50   Input ~ 0
+IN3A
+Text GLabel 1050 950  0    50   Input ~ 0
+IN2B
+Text GLabel 1050 1050 0    50   Input ~ 0
+IN2A
+Text GLabel 1050 1150 0    50   Input ~ 0
+IN1B
+Text GLabel 1050 1250 0    50   Input ~ 0
+IN1A
+Text GLabel 1050 1350 0    50   Input ~ 0
+IN0B
+Text GLabel 1050 1450 0    50   Input ~ 0
+IN0A
+Text GLabel 2400 850  2    50   Input ~ 0
+SCL
+Text GLabel 2400 950  2    50   Input ~ 0
+SDA
+Text GLabel 2400 1150 2    50   Input ~ 0
+ADDR
+Text GLabel 3750 2900 0    50   Input ~ 0
+SCL
+Text GLabel 3750 3000 0    50   Input ~ 0
+SDA
+Text GLabel 4000 4800 0    50   Input ~ 0
+ADDR
+Text GLabel 4850 4450 0    50   Input ~ 0
+INTB1
+Text GLabel 4950 4600 0    50   Input ~ 0
+SD1
+Text GLabel 7550 1500 2    50   Input ~ 0
+IN3B
+Text GLabel 7550 2300 2    50   Input ~ 0
+IN3A
+Text GLabel 7550 2500 2    50   Input ~ 0
+IN2B
+Text GLabel 7550 3300 2    50   Input ~ 0
+IN2A
+Text GLabel 7550 3550 2    50   Input ~ 0
+IN1B
+Text GLabel 7550 4350 2    50   Input ~ 0
+IN1A
+Text GLabel 7550 4600 2    50   Input ~ 0
+IN0B
+Text GLabel 7550 5400 2    50   Input ~ 0
+IN0A
+Text GLabel 9350 2900 0    50   Input ~ 0
+SCL
+Text GLabel 9350 3000 0    50   Input ~ 0
+SDA
+Text GLabel 9600 4800 0    50   Input ~ 0
+ADDR
+Text GLabel 10450 4450 0    50   Input ~ 0
+INTB2
+Text GLabel 10550 4600 0    50   Input ~ 0
+SD2
+Text GLabel 13150 1500 2    50   Input ~ 0
+IN3B
+Text GLabel 13150 2300 2    50   Input ~ 0
+IN3A
+Text GLabel 13150 2500 2    50   Input ~ 0
+IN2B
+Text GLabel 13150 3300 2    50   Input ~ 0
+IN2A
+Text GLabel 13150 3550 2    50   Input ~ 0
+IN1B
+Text GLabel 13150 4350 2    50   Input ~ 0
+IN1A
+Text GLabel 13150 4600 2    50   Input ~ 0
+IN0B
+Text GLabel 13150 5400 2    50   Input ~ 0
+IN0A
+$Comp
+L power:+3.3V #PWR02
+U 1 1 60DAC84A
+P 1600 3450
+F 0 "#PWR02" H 1600 3300 50  0001 C CNN
+F 1 "+3.3V" H 1615 3623 50  0000 C CNN
+F 2 "" H 1600 3450 50  0001 C CNN
+F 3 "" H 1600 3450 50  0001 C CNN
+	1    1600 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 60E1E6CB
+P 2400 1050
+F 0 "#PWR0102" H 2400 900 50  0001 C CNN
+F 1 "+3.3V" H 2415 1223 50  0000 C CNN
+F 2 "" H 2400 1050 50  0001 C CNN
+F 3 "" H 2400 1050 50  0001 C CNN
+	1    2400 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR07
+U 1 1 60DB8951
+P 3900 2450
+F 0 "#PWR07" H 3900 2300 50  0001 C CNN
+F 1 "+3.3V" H 3915 2623 50  0000 C CNN
+F 2 "" H 3900 2450 50  0001 C CNN
+F 3 "" H 3900 2450 50  0001 C CNN
+	1    3900 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR08
+U 1 1 60DB8DB7
+P 4150 2450
+F 0 "#PWR08" H 4150 2300 50  0001 C CNN
+F 1 "+3.3V" H 4165 2623 50  0000 C CNN
+F 2 "" H 4150 2450 50  0001 C CNN
+F 3 "" H 4150 2450 50  0001 C CNN
+	1    4150 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR09
+U 1 1 60DB48C5
+P 4200 4350
+F 0 "#PWR09" H 4200 4200 50  0001 C CNN
+F 1 "+3.3V" H 4215 4523 50  0000 C CNN
+F 2 "" H 4200 4350 50  0001 C CNN
+F 3 "" H 4200 4350 50  0001 C CNN
+	1    4200 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 00000000
+P 9800 4350
+F 0 "#PWR?" H 9800 4200 50  0001 C CNN
+F 1 "+3.3V" H 9815 4523 50  0000 C CNN
+F 2 "" H 9800 4350 50  0001 C CNN
+F 3 "" H 9800 4350 50  0001 C CNN
+	1    9800 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 60DAFF8D
+P 1250 3950
+F 0 "#PWR01" H 1250 3700 50  0001 C CNN
+F 1 "GND" H 1255 3777 50  0000 C CNN
+F 2 "" H 1250 3950 50  0001 C CNN
+F 3 "" H 1250 3950 50  0001 C CNN
+	1    1250 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 60E1DFFA
+P 2400 1450
+F 0 "#PWR0101" H 2400 1200 50  0001 C CNN
+F 1 "GND" H 2405 1277 50  0000 C CNN
+F 2 "" H 2400 1450 50  0001 C CNN
+F 3 "" H 2400 1450 50  0001 C CNN
+	1    2400 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 60DACEEA
+P 3100 3550
+F 0 "#PWR05" H 3100 3300 50  0001 C CNN
+F 1 "GND" H 3105 3377 50  0000 C CNN
+F 2 "" H 3100 3550 50  0001 C CNN
+F 3 "" H 3100 3550 50  0001 C CNN
+	1    3100 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 60DB2E71
+P 3800 3900
+F 0 "#PWR06" H 3800 3650 50  0001 C CNN
+F 1 "GND" H 3805 3727 50  0000 C CNN
+F 2 "" H 3800 3900 50  0001 C CNN
+F 3 "" H 3800 3900 50  0001 C CNN
+	1    3800 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 60DB4498
+P 4200 5250
+F 0 "#PWR010" H 4200 5000 50  0001 C CNN
+F 1 "GND" H 4205 5077 50  0000 C CNN
+F 2 "" H 4200 5250 50  0001 C CNN
+F 3 "" H 4200 5250 50  0001 C CNN
+	1    4200 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 60DC10FA
+P 4850 2650
+F 0 "#PWR011" H 4850 2400 50  0001 C CNN
+F 1 "GND" H 4855 2477 50  0000 C CNN
+F 2 "" H 4850 2650 50  0001 C CNN
+F 3 "" H 4850 2650 50  0001 C CNN
+	1    4850 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 60DBDE33
+P 5050 5200
+F 0 "#PWR012" H 5050 4950 50  0001 C CNN
+F 1 "GND" H 5055 5027 50  0000 C CNN
+F 2 "" H 5050 5200 50  0001 C CNN
+F 3 "" H 5050 5200 50  0001 C CNN
+	1    5050 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 60DBA465
+P 5150 4150
+F 0 "#PWR013" H 5150 3900 50  0001 C CNN
+F 1 "GND" H 5155 3977 50  0000 C CNN
+F 2 "" H 5150 4150 50  0001 C CNN
+F 3 "" H 5150 4150 50  0001 C CNN
+	1    5150 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 00000000
+P 9400 3900
+F 0 "#PWR?" H 9400 3650 50  0001 C CNN
+F 1 "GND" H 9405 3727 50  0000 C CNN
+F 2 "" H 9400 3900 50  0001 C CNN
+F 3 "" H 9400 3900 50  0001 C CNN
+	1    9400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 00000000
+P 9800 5250
+F 0 "#PWR?" H 9800 5000 50  0001 C CNN
+F 1 "GND" H 9805 5077 50  0000 C CNN
+F 2 "" H 9800 5250 50  0001 C CNN
+F 3 "" H 9800 5250 50  0001 C CNN
+	1    9800 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 00000000
+P 10450 2650
+F 0 "#PWR?" H 10450 2400 50  0001 C CNN
+F 1 "GND" H 10455 2477 50  0000 C CNN
+F 2 "" H 10450 2650 50  0001 C CNN
+F 3 "" H 10450 2650 50  0001 C CNN
+	1    10450 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 00000000
+P 10650 5200
+F 0 "#PWR?" H 10650 4950 50  0001 C CNN
+F 1 "GND" H 10655 5027 50  0000 C CNN
+F 2 "" H 10650 5200 50  0001 C CNN
+F 3 "" H 10650 5200 50  0001 C CNN
+	1    10650 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 00000000
+P 10750 4150
+F 0 "#PWR?" H 10750 3900 50  0001 C CNN
+F 1 "GND" H 10755 3977 50  0000 C CNN
+F 2 "" H 10750 4150 50  0001 C CNN
+F 3 "" H 10750 4150 50  0001 C CNN
+	1    10750 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 60DB241B
+P 3550 3450
+F 0 "R3" V 3757 3450 50  0000 C CNN
+F 1 "0" V 3666 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3480 3450 50  0001 C CNN
+F 3 "~" H 3550 3450 50  0001 C CNN
+	1    3550 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60DB22DB
+P 3800 3750
+F 0 "R4" H 3870 3796 50  0000 L CNN
+F 1 "49" H 3870 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3730 3750 50  0001 C CNN
+F 3 "~" H 3800 3750 50  0001 C CNN
+	1    3800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 60DB59B6
+P 3900 2600
+F 0 "R5" H 3970 2646 50  0000 L CNN
+F 1 "49" H 3970 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3830 2600 50  0001 C CNN
+F 3 "~" H 3900 2600 50  0001 C CNN
+	1    3900 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 60DB5C56
+P 4150 2600
+F 0 "R6" H 4220 2646 50  0000 L CNN
+F 1 "49" H 4220 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4080 2600 50  0001 C CNN
+F 3 "~" H 4150 2600 50  0001 C CNN
+	1    4150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 60DB3A78
+P 4200 4500
+F 0 "R7" H 4270 4546 50  0000 L CNN
+F 1 "R" H 4270 4455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4130 4500 50  0001 C CNN
+F 3 "~" H 4200 4500 50  0001 C CNN
+	1    4200 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 60DB3C72
+P 4200 5100
+F 0 "R8" H 4270 5146 50  0000 L CNN
+F 1 "R" H 4270 5055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4130 5100 50  0001 C CNN
+F 3 "~" H 4200 5100 50  0001 C CNN
+	1    4200 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 00000000
+P 9400 3750
+F 0 "R?" H 9470 3796 50  0000 L CNN
+F 1 "49" H 9470 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9330 3750 50  0001 C CNN
+F 3 "~" H 9400 3750 50  0001 C CNN
+	1    9400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 00000000
+P 9800 4500
+F 0 "R?" H 9870 4546 50  0000 L CNN
+F 1 "R" H 9870 4455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9730 4500 50  0001 C CNN
+F 3 "~" H 9800 4500 50  0001 C CNN
+	1    9800 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 00000000
+P 9800 5100
+F 0 "R?" H 9870 5146 50  0000 L CNN
+F 1 "R" H 9870 5055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9730 5100 50  0001 C CNN
+F 3 "~" H 9800 5100 50  0001 C CNN
+	1    9800 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L FDC2214-rescue:CMH322522-180KL-SamacSys_Parts L1
+U 1 1 60DC4DAE
+P 7200 2300
+F 0 "L1" H 7600 2525 50  0000 C CNN
+F 1 "CMH322522-180KL" H 7600 2434 50  0000 C CNN
+F 2 "SamacSys_Parts:INDPM3225X240N" H 7850 2350 50  0001 L CNN
+F 3 "http://www.bourns.com/docs/Product-Datasheets/CMH322522.pdf" H 7850 2250 50  0001 L CNN
+F 4 "Fixed Inductors 18uH 10% 2.52MHz" H 7850 2150 50  0001 L CNN "Description"
+F 5 "2.4" H 7850 2050 50  0001 L CNN "Height"
+F 6 "652-CMH322522-180KL" H 7850 1950 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Bourns/CMH322522-180KL?qs=LKPZbmhlTxjz1%2FeXNNd74w%3D%3D" H 7850 1850 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Bourns" H 7850 1750 50  0001 L CNN "Manufacturer_Name"
+F 9 "CMH322522-180KL" H 7850 1650 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7200 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L FDC2214-rescue:CMH322522-180KL-SamacSys_Parts L2
+U 1 1 60DA4119
+P 7200 3300
+F 0 "L2" H 7600 3525 50  0000 C CNN
+F 1 "CMH322522-180KL" H 7600 3434 50  0000 C CNN
+F 2 "SamacSys_Parts:INDPM3225X240N" H 7850 3350 50  0001 L CNN
+F 3 "http://www.bourns.com/docs/Product-Datasheets/CMH322522.pdf" H 7850 3250 50  0001 L CNN
+F 4 "Fixed Inductors 18uH 10% 2.52MHz" H 7850 3150 50  0001 L CNN "Description"
+F 5 "2.4" H 7850 3050 50  0001 L CNN "Height"
+F 6 "652-CMH322522-180KL" H 7850 2950 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Bourns/CMH322522-180KL?qs=LKPZbmhlTxjz1%2FeXNNd74w%3D%3D" H 7850 2850 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Bourns" H 7850 2750 50  0001 L CNN "Manufacturer_Name"
+F 9 "CMH322522-180KL" H 7850 2650 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7200 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L FDC2214-rescue:CMH322522-180KL-SamacSys_Parts L3
+U 1 1 60DC35E5
+P 7200 4350
+F 0 "L3" H 7600 4575 50  0000 C CNN
+F 1 "CMH322522-180KL" H 7600 4484 50  0000 C CNN
+F 2 "SamacSys_Parts:INDPM3225X240N" H 7850 4400 50  0001 L CNN
+F 3 "http://www.bourns.com/docs/Product-Datasheets/CMH322522.pdf" H 7850 4300 50  0001 L CNN
+F 4 "Fixed Inductors 18uH 10% 2.52MHz" H 7850 4200 50  0001 L CNN "Description"
+F 5 "2.4" H 7850 4100 50  0001 L CNN "Height"
+F 6 "652-CMH322522-180KL" H 7850 4000 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Bourns/CMH322522-180KL?qs=LKPZbmhlTxjz1%2FeXNNd74w%3D%3D" H 7850 3900 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Bourns" H 7850 3800 50  0001 L CNN "Manufacturer_Name"
+F 9 "CMH322522-180KL" H 7850 3700 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7200 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L FDC2214-rescue:CMH322522-180KL-SamacSys_Parts L4
+U 1 1 60DC415C
+P 7200 5400
+F 0 "L4" H 7600 5625 50  0000 C CNN
+F 1 "CMH322522-180KL" H 7600 5534 50  0000 C CNN
+F 2 "SamacSys_Parts:INDPM3225X240N" H 7850 5450 50  0001 L CNN
+F 3 "http://www.bourns.com/docs/Product-Datasheets/CMH322522.pdf" H 7850 5350 50  0001 L CNN
+F 4 "Fixed Inductors 18uH 10% 2.52MHz" H 7850 5250 50  0001 L CNN "Description"
+F 5 "2.4" H 7850 5150 50  0001 L CNN "Height"
+F 6 "652-CMH322522-180KL" H 7850 5050 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Bourns/CMH322522-180KL?qs=LKPZbmhlTxjz1%2FeXNNd74w%3D%3D" H 7850 4950 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Bourns" H 7850 4850 50  0001 L CNN "Manufacturer_Name"
+F 9 "CMH322522-180KL" H 7850 4750 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7200 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L FDC2214-rescue:CMH322522-180KL-SamacSys_Parts L?
+U 1 1 00000000
+P 12800 2300
+F 0 "L?" H 13200 2525 50  0000 C CNN
+F 1 "CMH322522-180KL" H 13200 2434 50  0000 C CNN
+F 2 "SamacSys_Parts:INDPM3225X240N" H 13450 2350 50  0001 L CNN
+F 3 "http://www.bourns.com/docs/Product-Datasheets/CMH322522.pdf" H 13450 2250 50  0001 L CNN
+F 4 "Fixed Inductors 18uH 10% 2.52MHz" H 13450 2150 50  0001 L CNN "Description"
+F 5 "2.4" H 13450 2050 50  0001 L CNN "Height"
+F 6 "652-CMH322522-180KL" H 13450 1950 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Bourns/CMH322522-180KL?qs=LKPZbmhlTxjz1%2FeXNNd74w%3D%3D" H 13450 1850 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Bourns" H 13450 1750 50  0001 L CNN "Manufacturer_Name"
+F 9 "CMH322522-180KL" H 13450 1650 50  0001 L CNN "Manufacturer_Part_Number"
+	1    12800 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L FDC2214-rescue:CMH322522-180KL-SamacSys_Parts L?
+U 1 1 00000000
+P 12800 3300
+F 0 "L?" H 13200 3525 50  0000 C CNN
+F 1 "CMH322522-180KL" H 13200 3434 50  0000 C CNN
+F 2 "SamacSys_Parts:INDPM3225X240N" H 13450 3350 50  0001 L CNN
+F 3 "http://www.bourns.com/docs/Product-Datasheets/CMH322522.pdf" H 13450 3250 50  0001 L CNN
+F 4 "Fixed Inductors 18uH 10% 2.52MHz" H 13450 3150 50  0001 L CNN "Description"
+F 5 "2.4" H 13450 3050 50  0001 L CNN "Height"
+F 6 "652-CMH322522-180KL" H 13450 2950 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Bourns/CMH322522-180KL?qs=LKPZbmhlTxjz1%2FeXNNd74w%3D%3D" H 13450 2850 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Bourns" H 13450 2750 50  0001 L CNN "Manufacturer_Name"
+F 9 "CMH322522-180KL" H 13450 2650 50  0001 L CNN "Manufacturer_Part_Number"
+	1    12800 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L FDC2214-rescue:CMH322522-180KL-SamacSys_Parts L?
+U 1 1 00000000
+P 12800 4350
+F 0 "L?" H 13200 4575 50  0000 C CNN
+F 1 "CMH322522-180KL" H 13200 4484 50  0000 C CNN
+F 2 "SamacSys_Parts:INDPM3225X240N" H 13450 4400 50  0001 L CNN
+F 3 "http://www.bourns.com/docs/Product-Datasheets/CMH322522.pdf" H 13450 4300 50  0001 L CNN
+F 4 "Fixed Inductors 18uH 10% 2.52MHz" H 13450 4200 50  0001 L CNN "Description"
+F 5 "2.4" H 13450 4100 50  0001 L CNN "Height"
+F 6 "652-CMH322522-180KL" H 13450 4000 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Bourns/CMH322522-180KL?qs=LKPZbmhlTxjz1%2FeXNNd74w%3D%3D" H 13450 3900 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Bourns" H 13450 3800 50  0001 L CNN "Manufacturer_Name"
+F 9 "CMH322522-180KL" H 13450 3700 50  0001 L CNN "Manufacturer_Part_Number"
+	1    12800 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L FDC2214-rescue:CMH322522-180KL-SamacSys_Parts L?
+U 1 1 00000000
+P 12800 5400
+F 0 "L?" H 13200 5625 50  0000 C CNN
+F 1 "CMH322522-180KL" H 13200 5534 50  0000 C CNN
+F 2 "SamacSys_Parts:INDPM3225X240N" H 13450 5450 50  0001 L CNN
+F 3 "http://www.bourns.com/docs/Product-Datasheets/CMH322522.pdf" H 13450 5350 50  0001 L CNN
+F 4 "Fixed Inductors 18uH 10% 2.52MHz" H 13450 5250 50  0001 L CNN "Description"
+F 5 "2.4" H 13450 5150 50  0001 L CNN "Height"
+F 6 "652-CMH322522-180KL" H 13450 5050 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Bourns/CMH322522-180KL?qs=LKPZbmhlTxjz1%2FeXNNd74w%3D%3D" H 13450 4950 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Bourns" H 13450 4850 50  0001 L CNN "Manufacturer_Name"
+F 9 "CMH322522-180KL" H 13450 4750 50  0001 L CNN "Manufacturer_Part_Number"
+	1    12800 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 60DAA84A
+P 1250 3800
+F 0 "C1" H 1365 3846 50  0000 L CNN
+F 1 "0.01uF" H 1365 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1288 3650 50  0001 C CNN
+F 3 "~" H 1250 3800 50  0001 C CNN
+	1    1250 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 60DBB867
+P 5050 5050
+F 0 "C2" H 5165 5096 50  0000 L CNN
+F 1 "1uF" H 5165 5005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5088 4900 50  0001 C CNN
+F 3 "~" H 5050 5050 50  0001 C CNN
+	1    5050 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 60DBBCDC
+P 5450 5050
+F 0 "C3" H 5565 5096 50  0000 L CNN
+F 1 "0.1uF" H 5565 5005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5488 4900 50  0001 C CNN
+F 3 "~" H 5450 5050 50  0001 C CNN
+	1    5450 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 60DBC1A7
+P 5850 5050
+F 0 "C4" H 5965 5096 50  0000 L CNN
+F 1 "0.01uF" H 5965 5005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5888 4900 50  0001 C CNN
+F 3 "~" H 5850 5050 50  0001 C CNN
+	1    5850 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 60DC7EDB
+P 7550 1950
+F 0 "C5" H 7665 1996 50  0000 L CNN
+F 1 "33pF" H 7665 1905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7588 1800 50  0001 C CNN
+F 3 "~" H 7550 1950 50  0001 C CNN
+	1    7550 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 60DC8520
+P 7550 2900
+F 0 "C6" H 7665 2946 50  0000 L CNN
+F 1 "33pF" H 7665 2855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7588 2750 50  0001 C CNN
+F 3 "~" H 7550 2900 50  0001 C CNN
+	1    7550 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 60DC8AC9
+P 7550 4000
+F 0 "C7" H 7665 4046 50  0000 L CNN
+F 1 "33pF" H 7665 3955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7588 3850 50  0001 C CNN
+F 3 "~" H 7550 4000 50  0001 C CNN
+	1    7550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 60DC9042
+P 7550 5000
+F 0 "C8" H 7665 5046 50  0000 L CNN
+F 1 "33pF" H 7665 4955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7588 4850 50  0001 C CNN
+F 3 "~" H 7550 5000 50  0001 C CNN
+	1    7550 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 00000000
+P 10650 5050
+F 0 "C?" H 10765 5096 50  0000 L CNN
+F 1 "1uF" H 10765 5005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10688 4900 50  0001 C CNN
+F 3 "~" H 10650 5050 50  0001 C CNN
+	1    10650 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 00000000
+P 11050 5050
+F 0 "C?" H 11165 5096 50  0000 L CNN
+F 1 "0.1uF" H 11165 5005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 11088 4900 50  0001 C CNN
+F 3 "~" H 11050 5050 50  0001 C CNN
+	1    11050 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 00000000
+P 11450 5050
+F 0 "C?" H 11565 5096 50  0000 L CNN
+F 1 "0.01uF" H 11565 5005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 11488 4900 50  0001 C CNN
+F 3 "~" H 11450 5050 50  0001 C CNN
+	1    11450 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 00000000
+P 13150 1950
+F 0 "C?" H 13265 1996 50  0000 L CNN
+F 1 "33pF" H 13265 1905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 13188 1800 50  0001 C CNN
+F 3 "~" H 13150 1950 50  0001 C CNN
+	1    13150 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 00000000
+P 13150 2900
+F 0 "C?" H 13265 2946 50  0000 L CNN
+F 1 "33pF" H 13265 2855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 13188 2750 50  0001 C CNN
+F 3 "~" H 13150 2900 50  0001 C CNN
+	1    13150 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 00000000
+P 13150 4000
+F 0 "C?" H 13265 4046 50  0000 L CNN
+F 1 "33pF" H 13265 3955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 13188 3850 50  0001 C CNN
+F 3 "~" H 13150 4000 50  0001 C CNN
+	1    13150 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 00000000
+P 13150 5000
+F 0 "C?" H 13265 5046 50  0000 L CNN
+F 1 "33pF" H 13265 4955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 13188 4850 50  0001 C CNN
+F 3 "~" H 13150 5000 50  0001 C CNN
+	1    13150 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x07 J1
+U 1 1 60DE4AAE
+P 2200 1150
+F 0 "J1" H 2118 625 50  0000 C CNN
+F 1 "Conn_01x07" H 2118 716 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 2200 1150 50  0001 C CNN
+F 3 "~" H 2200 1150 50  0001 C CNN
+	1    2200 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J2
+U 1 1 60DE4177
+P 1250 1050
+F 0 "J2" H 1330 1042 50  0000 L CNN
+F 1 "Conn_01x08" H 1330 951 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 1250 1050 50  0001 C CNN
+F 3 "~" H 1250 1050 50  0001 C CNN
+	1    1250 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L FDC2214-rescue:ECS-2033-400-BN-SamacSys_Parts Y1
+U 1 1 60DA4D63
+P 1600 3450
+F 0 "Y1" H 2350 3715 50  0000 C CNN
+F 1 "ECS-2033-400-BN" H 2350 3624 50  0000 C CNN
+F 2 "SamacSys_Parts:ECS2033400BN" H 2950 3550 50  0001 L CNN
+F 3 "http://www.ecsxtal.com/store/pdf/ecs-2025-2033.pdf" H 2950 3450 50  0001 L CNN
+F 4 "OSC XO 40.000MHZ HCMOS SMD" H 2950 3350 50  0001 L CNN "Description"
+F 5 "1" H 2950 3250 50  0001 L CNN "Height"
+F 6 "520-2033-400-BN" H 2950 3150 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/ECS/ECS-2033-400-BN?qs=94V4QatVK%252BeDb45AbA6EJA%3D%3D" H 2950 3050 50  0001 L CNN "Mouser Price/Stock"
+F 8 "ECS" H 2950 2950 50  0001 L CNN "Manufacturer_Name"
+F 9 "ECS-2033-400-BN" H 2950 2850 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1600 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L FDC2214-rescue:FDC2214QRGHRQ1-SamacSys_Parts IC1
+U 1 1 60DA3158
+P 4450 3250
+F 0 "IC1" H 4678 3296 50  0000 L CNN
+F 1 "FDC2214QRGHRQ1" H 4678 3205 50  0000 L CNN
+F 2 "SamacSys_Parts:QFN50P400X400X80-17N" H 5500 3650 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/fdc2214-q1" H 5500 3550 50  0001 L CNN
+F 4 "4-channel, Noise-immune, AEC-Q100 qualified, 28-bit Capacitive Sensing Solution" H 5500 3450 50  0001 L CNN "Description"
+F 5 "0.8" H 5500 3350 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 5500 3250 50  0001 L CNN "Manufacturer_Name"
+F 7 "FDC2214QRGHRQ1" H 5500 3150 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-FDC2214QRGHRQ1" H 5500 3050 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/FDC2214QRGHRQ1?qs=zEmsApcVOkXnIqI0octY2Q%3D%3D" H 5500 2950 50  0001 L CNN "Mouser Price/Stock"
+F 10 "FDC2214QRGHRQ1" H 5500 2850 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/fdc2214qrghrq1/texas-instruments" H 5500 2750 50  0001 L CNN "Arrow Price/Stock"
+	1    4450 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L FDC2214-rescue:FDC2214QRGHRQ1-SamacSys_Parts IC?
+U 1 1 00000000
+P 10050 3250
+F 0 "IC?" H 10278 3296 50  0000 L CNN
+F 1 "FDC2214QRGHRQ1" H 10278 3205 50  0000 L CNN
+F 2 "SamacSys_Parts:QFN50P400X400X80-17N" H 11100 3650 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/fdc2214-q1" H 11100 3550 50  0001 L CNN
+F 4 "4-channel, Noise-immune, AEC-Q100 qualified, 28-bit Capacitive Sensing Solution" H 11100 3450 50  0001 L CNN "Description"
+F 5 "0.8" H 11100 3350 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 11100 3250 50  0001 L CNN "Manufacturer_Name"
+F 7 "FDC2214QRGHRQ1" H 11100 3150 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-FDC2214QRGHRQ1" H 11100 3050 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/FDC2214QRGHRQ1?qs=zEmsApcVOkXnIqI0octY2Q%3D%3D" H 11100 2950 50  0001 L CNN "Mouser Price/Stock"
+F 10 "FDC2214QRGHRQ1" H 11100 2850 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/fdc2214qrghrq1/texas-instruments" H 11100 2750 50  0001 L CNN "Arrow Price/Stock"
+	1    10050 3250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
