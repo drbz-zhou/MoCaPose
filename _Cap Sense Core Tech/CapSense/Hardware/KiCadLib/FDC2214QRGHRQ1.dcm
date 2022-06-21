@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FDC2214QRGHRQ1
+D 4-channel, Noise-immune, AEC-Q100 qualified, 28-bit Capacitive Sensing Solution
+K
+F http://www.ti.com/lit/gpn/fdc2214-q1
+$ENDCMP
+#
+#End Doc Library
