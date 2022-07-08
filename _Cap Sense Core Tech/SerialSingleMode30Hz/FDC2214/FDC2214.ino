@@ -26,19 +26,26 @@ void setup() {
 
   pinMode(LED_BUILTIN, OUTPUT);
   //SD,INTB,ADDR_Cap, ADDR_Cap_1
-  pinMode(6, OUTPUT);
-  digitalWrite(6, LOW);
-  pinMode(5, INPUT);
-  pinMode(9, OUTPUT);
-  digitalWrite(9, HIGH);
-  pinMode(10, OUTPUT);
-  digitalWrite(10, LOW); 
+  //pinMode(6, OUTPUT);
+  //digitalWrite(6, LOW);
+  //pinMode(5, INPUT);
+  //pinMode(9, OUTPUT);
+  //digitalWrite(9, HIGH);
+  //pinMode(10, OUTPUT);
+  //digitalWrite(10, LOW); 
 
-  // ### Start I2C 
-  Wire.begin();
+  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(1000);                       // wait for a second
+  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+  delay(1000);                       // wait for a second
+
   
   // ### Start serial
   Serial.begin(115200);
+  Serial.println("Serial Started");
+  // ### Start I2C 
+  Wire.begin();
+  Serial.println("I2C Started");
   
   delay(100); 
   
