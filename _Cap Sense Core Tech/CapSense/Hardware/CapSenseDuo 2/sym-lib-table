@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "FDC2214")(type "KiCad")(uri "${KIPRJMOD}/CapSenseDuo-cache.kicad_sym")(options "")(descr ""))
+)
