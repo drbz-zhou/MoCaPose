@@ -52,7 +52,7 @@ function initGraph() {
       margin: { l: 30, r: 30, b: 25, t: 25 },
       color: '#2e2e2e',
       'xaxis': { 'range': [frameBufferSize], 'autorange': "true" },
-      'yaxis': { 'range': [13500000, 15500000] }
+      'yaxis': { 'range': [11000000, 15000000] }
     });
 }
 
