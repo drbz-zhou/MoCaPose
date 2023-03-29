@@ -42,7 +42,7 @@ function initGraph() {
             color: '#2e2e2e',
             'xaxis': { 'range': [frameBufferSize], 'autorange': "true" },
             'yaxis': { 'autorange': "true" }
-        });
+        }, { responsive: true });
 
     Plotly.plot('plot_Cap_1', traceData_Cap_1,
         {
@@ -55,7 +55,7 @@ function initGraph() {
             'xaxis': { 'range': [frameBufferSize], 'autorange': "true" },
             'yaxis': { 'autorange': "true" }
 
-        });
+        }, { responsive: true });
 }
 
 // redraw plots
